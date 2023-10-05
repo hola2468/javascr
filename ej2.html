@@ -1,0 +1,123 @@
+<html>
+<head></head>
+<body>
+
+<script languaje="JavaScript">
+
+//var x = parseInt("1000", 10);
+
+var contador = 0;
+
+function pregunta() {
+
+    if ( document.getElementById("p1").checked == true){
+	
+        contador = contador - 2000;
+
+    } else if (document.getElementById("p3").checked == true) {
+
+        contador = contador + 1500;
+
+    }
+
+    if ( document.getElementById("m2").checked == true){
+	
+        contador = contador + 1500;
+
+    } else if (document.getElementById("m3").checked == true) {
+
+        contador = contador + 3000;
+
+    }
+
+    if ( document.getElementById("z4").checked == true){
+	
+        contador = contador - 500;
+
+    } else if (document.getElementById("z5").checked == true) {
+
+        contador = contador - 600;
+
+    }
+
+	if ( document.getElementById("r1").checked == true){
+	
+	    contador = contador + 750;
+	
+	} 
+
+	if ( document.getElementById("r2").checked == true){
+	
+        contador = contador + 200;
+	
+	} 
+
+	if ( document.getElementById("r3").checked == true){
+	
+        contador = contador + 340;
+	
+	} 
+
+    if ( document.getElementById("r4").checked == true){
+	
+     contador = contador + 800;
+
+    }
+
+    if ( (document.getElementById("p1").checked == true && document.getElementById("m2").checked == true) ||  (document.getElementById("p1").checked == true && document.getElementById("m3").checked == true) ){
+	
+        alert( "NO");
+
+   }
+
+   if ( (document.getElementById("r1").checked == true && document.getElementById("z4").checked == true) ||  (document.getElementById("r1").checked == true && document.getElementById("z5").checked == true) ){
+	
+        alert( "NO");
+
+    }
+
+    if ( (document.getElementById("r4").checked == true && document.getElementById("p1").checked == true) ||  (document.getElementById("r4").checked == true && document.getElementById("p2").checked == true) ){
+	
+        alert( "NO");
+
+    }   
+
+    alert( "El precio es:   " + contador);
+
+}
+
+	
+
+</script>
+
+
+
+<form>
+
+    <table> <thead>
+        
+        <tr>  <th>Configuracion del coche </th> </tr> </thead>
+        
+        <tr> <td> Tipo de Motor <br> <input type="radio" name="motor" value="roma" id="m1" > Gasolina <input type="radio" name="motor" value="roma" id="m2" > Diesel (+1500) <input type="radio" name="motor" value="roma" id="m3" > Hibrido (+3000) </td> </tr>
+        
+        <tr> <td> Tipo de Puertas <br> <input type="radio" name="puerta" value="roma" id="p1" > 3 puertas (-2000) (Solo con gasolina) <input type="radio" name="puerta" value="roma" id="p2" > 5 puertas <input type="radio" name="puerta" value="roma" id="p3" > Familiar (+1500) </td> </tr>
+        
+        <tr> <td> Tipo de Pinturas <br> <input type="radio" name="color" value="roma" id="z1" > Rojo <input type="radio" name="color" value="roma" id="z2" > Verde <input type="radio" name="color" value="roma" id="z3" > Naranja <input type="radio" name="color" value="roma" id="z4" > Blanco (-500) <input type="radio" name="color" value="roma" id="z5" > Negro (-600)</td> </tr>
+        
+        <tr> <td> Selecionar las que deseen: <br>
+            <input type="checkbox" name="roma" value="roma" id="r1" > Metalizada (+750) (Solo Rojo, Verde o Naranja) <br> 
+            <input type="checkbox" name="milan" value="roma" id="r2"> Llantas (+200) <br> 
+            <input type="checkbox" name="palermo" id="r3"> GPS (+340) <br>
+            <input type="checkbox" name="palermo" id="r4">  DVD (+800) (Solo modelo Familiar) </td> </tr>
+        <tr> <td> Total a cobrar: <br>  <input type="submit" value="Enviar" name="Submit" onClick="pregunta()" /> </td> </tr>
+        
+    
+    </table>
+	
+	
+
+</form>
+
+
+</body>
+</html> 

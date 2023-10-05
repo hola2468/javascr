@@ -1,0 +1,93 @@
+<html>
+<head>
+
+	<meta charset="UTF-8">
+	
+</head>
+<body>
+<script languaje="javascript">
+
+var contador=0, aux=0;
+
+var text='esto es div1';
+document.write(text);	
+
+
+
+	function texto() {
+	
+		text=prompt('Ingrese texto:');
+		aux = aux +1;
+		document.write(text);
+		
+	}
+	
+	
+	function fuente(){
+		
+		letra=prompt('Ingrese letra:');
+		text.style.fontFamily = letra;
+	}
+	
+	
+	function fondo(){
+		contador++;
+		
+		
+		
+		if (contador == 1) {
+			
+			document.body.style.backgroundColor = "red";
+			
+		} else if( contador == 2) {
+			document.body.style.backgroundColor = "green";
+			
+			
+		} else if( contador == 3) {
+			document.body.style.backgroundColor = "yellow";
+			
+			
+		} else if( contador == 4) {
+			document.body.style.backgroundColor = "black";
+			
+			
+		} else if( contador == 5) {
+			document.body.style.backgroundColor = "white";
+			
+			
+		} else {
+			document.body.style.backgroundColor = "blue";
+			contador = 0;
+			
+		}
+		
+
+	} 
+	
+		
+
+	
+	</script>
+	
+	
+	
+	<br>
+	
+	
+	<form>
+	
+	<input type="button" value="Cambiar texto" onClick="texto()"> 
+	
+	<br>
+	
+	<input type="button" value="Cambiar color de fondo" onClick="fondo()"> 
+	
+	<br>
+	
+	<input type="button" value="Cambiar tipo y color de letra" onClick="fuente()"> 
+	
+	</form>
+
+
+</body>
+</html> 

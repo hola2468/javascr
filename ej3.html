@@ -1,0 +1,74 @@
+<html>
+<head></head>
+<body>
+
+<script languaje="JavaScript">
+
+//var x = parseInt("1000", 10);
+
+var contador = 0;
+
+function pregunta() {
+
+	if ( document.getElementById("r1").checked == true){
+	
+	contador++;
+	
+	} 
+
+	if ( document.getElementById("r4").checked == true){
+	
+	contador++;
+	
+	} 
+
+	if ( document.getElementById("r7").checked == true){
+	
+	contador++;
+	
+	} 
+
+	
+	alert( "La nota es:" + contador + "/3");
+}
+
+	
+
+</script>
+
+<form>
+	
+	
+    <h1> TEST</h1>
+	
+	Pregunta 1, Capital de Italia:
+	
+	<br> 
+	
+	ROMA: <input type="checkbox" name="roma" value="roma" id="r1" > <br> 
+	MILAN: <input type="checkbox" name="milan" value="roma" id="r2"> <br> 
+	PALERMO: <input type="checkbox" name="palermo" id="r3"> <br> <br> 
+
+	Pregunta 2, Capital de Eslovaquia: <br> 
+
+	BRATISLAVA: <input type="checkbox" name="bratislava" value="bratislava" id="r4" > <br> 
+	MILAN: <input type="checkbox" name="milan" value="roma" id="r5"> <br> 
+	PALERMO: <input type="checkbox" name="palermo" value="palermo" id="r6"> <br> <br> 
+
+	Pregunta 3, Capital de Portugal: <br> 
+
+	LISBOA: <input type="checkbox" name="lisboa" value="lisboa" id="r7" > <br> 
+	MILAN: <input type="checkbox" name="milan" value="milan" id="r8"> <br> 
+	PALERMO: <input type="checkbox" name="palermo" value="palermo" id="r9"> <br> <br> 
+	
+	
+		
+	<input type="submit" value="send" name="Submit" onClick="pregunta()" />
+    <input type="reset" value="Reset" name="Reset" />
+   
+
+</form>
+
+
+</body>
+</html> 

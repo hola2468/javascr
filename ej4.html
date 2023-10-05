@@ -1,0 +1,83 @@
+<html>
+<head></head>
+<body>
+
+<script languaje="JavaScript">
+
+var nom =  document.form1.text1.value;
+
+function funca() {
+
+	if ( document.form1.text1.value == ""){
+	
+	alert("Rellene el campo nombre");
+	
+	}
+
+	if ( document.form1.text2.value == ""){
+	
+	alert("Rellene el campo primer apellido");
+	
+	} 
+
+	if ( document.form1.text3.value == ""){
+	
+	alert("Rellene el campo segundo apellido");
+	
+	} 
+
+	if ( document.form1.text4.value == ""){
+	
+	alert("Rellene el campo correo elctronico");
+	
+	} 
+
+	if ( document.form1.text4.value.includes("@") == false){
+	
+	alert("El correo dbe tener arroba");
+	
+	} 
+
+	if ( document.form1.text5.value.length != 7 ){
+	
+	alert("Intoduzca numero de 7 cifras");
+	
+	} 
+
+	if ( document.form1.text6.value.length != 1 && document.form1.text6.value.length != 2 ){
+	
+	alert("Introduzca nuemro de 1 o 2 cifras");
+	
+	}
+
+
+}
+
+
+
+</script>
+
+<form name="form1">
+	
+	
+    <h1> TEST</h1>
+	
+	Solicitud de informe de la vida laboral
+	
+	<br> 
+	
+	Nombre: <input type="text" name="text1" id="pregunta1" > <br> 
+	Primer Apellido: <input type="text" name="text2" id="pregunta1" > <br> 
+	Segundo Apellido: <input type="text" name="text3" id="pregunta1" > <br> 
+	Correo electrónico: <input type="text" name="text4" id="pregunta1" > <br>
+	Numero de afiliados a la Seguridad Social: <input type="select" name="select1" id="pregunta1" > / <input type="text" name="text5" id="pregunta1" > / <input type="text" name="text6" id="pregunta1" > <br>
+		
+	<input type="submit" value="send" name="Submit" onClick="funca()" />
+    <input type="reset" value="Reset" name="Reset" />
+   
+
+</form>
+
+
+</body>
+</html> 

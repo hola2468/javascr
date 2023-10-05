@@ -1,0 +1,407 @@
+
+	@font-face {
+  font-family: "SigmarOne";
+  src: url("sigmar-one.woff");
+}
+
+body {
+  padding: 0 50px;
+  background-color:hsl(210, 70%, 95%);
+  font-family: sans-serif;
+  text-align: justify;
+	background-image: url("../fondos/a.jpg");
+}
+
+#fondo {
+background-image: url("../fondos/m1.jpg");
+}
+
+
+
+/* index*/
+
+img.portada {
+	float: right;
+	margin-right: 100px;
+	margin-bottom: 10px;
+	height:300px;
+}
+
+/* fin index */
+
+
+h1 {
+  margin: 0;
+  font-family: "SigmarOne";
+  font-size: 3rem;
+  text-align: center;
+}
+
+h2 {
+  margin: 0;
+  color:hsl(210, 30%, 60%);
+  font-family: "SigmarOne";
+  font-size: 3rem;
+  text-transform: capitalize;
+  text-shadow: 3px 3px black;
+}
+
+h3 {
+  margin: 0;
+  color:red;
+  font-family: "SigmarOne";
+  font-size: 3rem;
+  text-transform: capitalize;
+  text-shadow: 3px 3px black;
+}
+
+h4 {
+  margin: 0;
+  color:green;
+  font-family: "SigmarOne";
+  font-size: 3rem;
+  text-transform: capitalize;
+  text-shadow: 3px 3px black;
+}
+
+strong {
+  padding: 0 10px;
+  background-color: white;
+  color: red;
+}
+
+i {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+time {
+  color: blue;
+}
+
+
+
+hr {
+  clear: both;
+  width: 66%;
+  height: 10px;
+  border: black 1px solid;
+  border-radius: 5px;
+  margin: 40px auto;
+  background-color: hsl(210, 30%, 60%);
+}
+
+address {
+  text-align: center;
+  font-style: normal;
+}
+
+img {
+  border: hsl(210, 30%, 60%) 5px solid;
+  padding: 5px;
+}
+
+img.izquierda {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 400px;
+}
+
+img.derecha {
+	float: right;
+	margin-right: 300px;
+	margin-bottom: 10px;
+}
+
+
+hr {
+  clear: both;
+  
+}
+.linea {
+  width: 100%;
+  border: 1px solid #000000;
+  margin: auto;
+  display:inline-block;
+}
+
+
+
+
+
+
+/* menu */
+
+
+
+#header {
+	margin:auto;
+	font-family:Arial, Helvetica, sans-serif;
+			}
+			
+		ul, ol {
+			list-style:none;
+		}
+			
+		.nav > li {
+			float:left;
+		}
+			
+		.nav li a {
+			background-color:#000;
+			color:#fff;
+			text-decoration:none;
+			padding:10px 12px;
+			display:block;
+		}
+			
+		.nav li a:hover {
+			background-color:#434343;
+		}
+			
+		.nav li ul {
+			display:none;
+			position:absolute;
+			min-width:140px;
+		}
+			
+		.nav li:hover > ul {
+			display:block;
+		}
+			
+		.nav li ul li {
+			position:relative;
+		}
+			
+		.nav li ul li ul {
+			right:-140px;
+			top:0px;
+		}
+
+
+
+
+
+
+/* fin menu*/
+
+/* formulario*/
+
+*{box-sizing:border-box;}/* incluye borde en calculo*/
+		
+	form{
+		width:300px;
+		padding:16px;
+		border-radius:10px;
+		margin:auto;
+		background-color:#31F109;
+	}
+
+	form label{
+		width:72px;
+		font-weight:bold;
+		display:inline-block;
+	}
+
+	form input[type="text"],
+	form input[type="email"]{
+		width:180px;
+		padding:3px 10px;
+		border:1px solid #E61ED1;
+		border-radius:3px;
+		background-color:#E61ED1;
+		margin:8px 0;
+		display:inline-block;
+}
+	form input[type="telefono"]{
+		width:180px;
+		padding:3px 10px;
+		border:1px solid #E61ED1;
+		border-radius:3px;
+		background-color:#E61ED1;
+		margin:8px 0;
+		display:inline-block;
+}
+
+	form input[type="number"]{
+		width:180px;
+		padding:3px 10px;
+		border:1px solid #E61ED1;
+		border-radius:3px;
+		background-color:#E61ED1;
+		margin:8px 0;
+		display:inline-block;
+}
+
+	form input[type="submit"]{
+		width:100%;
+		padding:8px 16px;
+		margin-top:32px;
+		border:1px solid #000;
+		border-radius:5px;
+		display:block;
+		color:#fff;
+		background-color:#000;
+	} 
+
+	form input[type="submit"]:hover{
+		cursor:pointer;
+	}
+
+	textarea{
+		width:100%;
+		height:100px;
+		border:1px solid #E61ED1;
+		border-radius:3px;
+		background-color:#E61ED1;			
+	margin:8px 0;
+		/*resize: vertical | horizontal | none | both*/
+		resize:none;
+		display:block;
+	}
+
+	
+
+
+
+
+
+/* fin formulario*/
+
+
+/*baldosas exterior*/
+
+.fondoa {
+padding:30px;
+background-color: white;
+}
+p.a3 {
+font-family: cursive;
+font-size: 1rem;
+}
+
+p.a4{
+	color: white;
+	
+	
+}
+
+/* fin baldosas exterior*/
+
+/* presupuesto*/
+
+.fondob {
+padding:30px;
+background-color: orange;
+}
+
+.fondoc {
+padding:30px;
+background-color: #E176A7;
+}
+
+p.a2 {
+font-family: math;
+font-size: 1.5rem;
+}
+
+
+
+/* fin presupuesto*/
+
+/* fabricacion*/
+
+#caja1{
+	
+	background-color: orange;
+	border-style: inset;
+		border-radius:10px;
+		border-width:10px;
+		font-family: emoji;
+	
+	
+}
+
+#caja2{
+	background-image: url("../fondos/m4.svg");
+	
+	font-family: cursive;
+	
+}
+
+#caja3{
+	
+		background-color:green;
+		border-style: dotted;
+		border-radius:10px;
+		border-width:10px;
+	font-style: italic;
+}
+
+/* fin fabricacion*/
+
+
+/* baldosas interior*/
+
+table
+{
+border:1px
+padding: 2px;
+width:100%;
+border:4px solid black;
+border-style: dotted;
+font-family: cursive;
+font-size: 2.5rem;
+text-align: center;
+background-color:olive;
+
+
+}
+
+td {
+padding: 2px;
+border:1px solid black;	
+font-family: "Times New Roman";
+font-size: 1.5rem;
+text-align: center;
+}
+
+
+tr {
+color:white;
+height:50px;
+padding: 2px;
+margin: 0.5px;
+text-align: center;
+
+
+}
+
+
+
+ 
+
+ /*fin baldosas interior*/    
+
+/* Historia*/
+p.a1 {
+font-family: fantasy;
+font-size: 1rem;
+}
+#his {
+
+}
+#his #his2 {
+	height:50%;
+ background-color: orange;
+}
+#his #his3 {
+	height:300px;
+margin: auto;
+  background-color: olive;
+}
+
+
+/* Historia*/
